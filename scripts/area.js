@@ -1,14 +1,14 @@
 const inputs = document.querySelectorAll('.sideInput')
-const calcBtn = document.querySelector('#hypBtn')
+const calcBtn = document.querySelector('#calcBtn')
 const output = document.querySelector('#output')
 
 let calcBtnClick = (e) => {
-    let result = 0;
+    let result = 1;
     e.preventDefault();
     for(let input of inputs) {
-        result += Math.pow(input.value, 2)
+        result *= input.value
     }
-    output.innerText = `The hypotenuse is ${Math.sqrt(result).toFixed(2)}`
+    output.innerText = `The hypotenuse is ${result/2}`
 }
 
 calcBtn.addEventListener('click', calcBtnClick)
