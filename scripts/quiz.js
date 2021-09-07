@@ -32,5 +32,4 @@ radioInputs.forEach((input) => {
 submitBtn.addEventListener('click', function(e) {
     e.preventDefault()
     result.innerText = `Your score is ${score}`
-    console.log(score);
 })
