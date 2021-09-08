@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Hypotenuse</title>
 </head>
 <body>
-    <form>
-        <div class="sideInputs">
-            <label for="a">Side a:-</label>
-            <input type="number" name="a" id="a" class="sideInput"/>
-        </div>
-        
-        <div class="sideInputs">
-            <label for="b">Side b:-</label>
-            <input type="number" name="b" id="b" class="sideInput"/>
-        </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/quiz.html">Quiz</a></li>
+            <li><a href="/isTriangle.html">isTriangle</a></li>
+            <li><a href="/area.html">Area</a></li>
+            <li><a href="/hypotenuse.html">Hypotenuse</a></li>
+        </ul>
+    </nav>
 
-        <button id="hypBtn">Calculate</button>
-    </form>
+    <div class="main">
+        <form>
+            <div class="sideInputs">
+                <label for="a">Side a:-</label>
+                <input type="number" name="a" id="a" class="sideInput"/>
+            </div>
+            
+            <div class="sideInputs">
+                <label for="b">Side b:-</label>
+                <input type="number" name="b" id="b" class="sideInput"/>
+            </div>
+    
+            <button id="hypBtn">Calculate</button>
+        </form>
+    
+        <p id="output"></p>
+    </div>
 
-    <p id="output"></p>
     <script src="/scripts/hypotenuse.js"></script>
 </body>
 </html>

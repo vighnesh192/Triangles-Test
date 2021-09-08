@@ -5,35 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is Triangle?</title>
-    
+    <link rel="stylesheet" href="/styles/isTriangle.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    <h1>Is Triangle?</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/quiz.html">Quiz</a></li>
+            <li><a href="/isTriangle.html">isTriangle</a></li>
+            <li><a href="/area.html">Area</a></li>
+            <li><a href="/hypotenuse.html">Hypotenuse</a></li>
+        </ul>
+    </nav>
 
-    <form>
-        <div class="angles">
-            <label for="angle1" class="angleLabel">Angle 1</label>
-            <input type="number" name="angle1" class="angleInput" />
-        </div>
-        
-        <div class="angles">
-            <label for="angle2" class="angleLabel">Angle 2</label>
-            <input type="number" name="angle2" class="angleInput" />
-        </div>
-        
-        <div class="angles">
-            <label for="angle3" class="angleLabel">Angle 3</label>
-            <input type="number" name="angle3" class="angleInput" />
-        </div>
+    <div class="main">
+        <h1>Is Triangle?</h1>
+    
+        <form>
+            <div class="angles">
+                <label for="angle1" class="angleLabel">Angle 1</label>
+                <input type="number" name="angle1" class="angleInput" />
+            </div>
+            
+            <div class="angles">
+                <label for="angle2" class="angleLabel">Angle 2</label>
+                <input type="number" name="angle2" class="angleInput" />
+            </div>
+            
+            <div class="angles">
+                <label for="angle3" class="angleLabel">Angle 3</label>
+                <input type="number" name="angle3" class="angleInput" />
+            </div>
+    
+            <div id="cal-angle-button-div">
+                <button id="calc-angle-button">
+                    Check
+                </button>
+            </div>
+        </form>
+    
+        <p id="output"></p>
+    </div>
 
-        <div id="cal-angle-button-div">
-            <button id="calc-angle-button">
-                Check
-            </button>
-        </div>
-    </form>
-
-    <p id="output"></p>
     
     <script src="/scripts/isTriangle.js"></script>
 </body>
