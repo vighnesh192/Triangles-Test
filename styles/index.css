@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+input[type="number"], label {
+    display: block;
+}
+
 body {
     background-color: #E6E6E6;
-    color: #0D0D0D;
+    /* color: #0D0D0D; */
+    color: #fff;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(270, 10%, 16%, 1)'/><path d='M0 0l10 20L20 0H0zm10 20l10 20 10-20H10z'  stroke-width='1' stroke='none' fill='hsla(270, 11%, 18%, 1)'/><path d='M20 0l10 20L40 0zm10 20l10 20 10-20zm-40 0L0 40l10-20z'  stroke-width='1' stroke='none' fill='hsla(270, 11%, 17%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
 }
 
 .navbar {
@@ -15,11 +21,14 @@ body {
     height: 10vh;
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 7.5%;
+    font-size: 1.15rem;
     /* background-color: #0D0D0D; */
-    background-color: #E6E6E6;
-    border-bottom: 1px solid #0D0D0D;
-    border-top: 1px solid #0D0D0D;
+    /* background-color: #E6E6E6; */
+    /* border-bottom: 1px solid #0D0D0D;
+    border-top: 1px solid #0D0D0D; */
+    /* border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff; */
 }
 
 .navbar ul {
@@ -37,7 +46,8 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #0D0D0D;
+    /* color: #0D0D0D; */
+    color: #fff;
 }
 
 .main {
@@ -51,4 +61,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main .output {
+    margin-top: 1.4rem;
+}
+
+@media(max-width: 480px) {
+    .main form {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }
