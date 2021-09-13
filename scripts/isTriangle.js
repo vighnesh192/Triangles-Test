@@ -1,7 +1,7 @@
 let angles = document.querySelectorAll('.angleInput')
 let checkButton = document.querySelector('#calc-angle-button')
 
-let output = document.querySelector('#output')
+let output = document.querySelector('.output')
 
 let onButtonClick = (e) => {
     e.preventDefault();

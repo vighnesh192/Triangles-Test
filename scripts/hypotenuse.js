@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll('.sideInput')
 const calcBtn = document.querySelector('#hypBtn')
-const output = document.querySelector('#output')
+const output = document.querySelector('.output')
 
 let calcBtnClick = (e) => {
     let result = 0;

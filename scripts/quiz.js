@@ -1,6 +1,6 @@
 const radioInputs = document.querySelectorAll('.radios')
 const submitBtn = document.querySelector('#quiz-submit-btn')
-const result = document.querySelector('#result')
+const result = document.querySelector('.output')
 
 let score = 0
 let answers = {
